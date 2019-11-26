@@ -21,8 +21,8 @@ removeButton.onclick = removeFromList;
  document.querySelectorAll('ul li');
 const clearCompleted = function (){
   for (let i = 0; i<document.querySelectorAll('ul li').length; i++){
-    if (document.querySelectorAll('ul li')[i].style.textDecoration ='line-through'){
-      document.querySelectorAll('ul li')[i].style.textDecoration='none'
+    if (document.querySelectorAll('ul li')[i].style.textDecoration ==='line-through'){
+      document.querySelectorAll('ul li')[i].style.color='white'
     }
     }
 }
