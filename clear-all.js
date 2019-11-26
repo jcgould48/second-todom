@@ -18,11 +18,11 @@ function clearList() {
 
 const removeButton = document.querySelector('.remove-todo');
 removeButton.onclick = removeFromList;
-let newLi = document.querySelectorAll('li');
+ document.querySelectorAll('ul li');
 const clearCompleted = function (){
-  for (let i = 0; i<newLi.length; i++){
-    if (newLi[i].textDecoration ='line-through'){
-        newLi[i].style.display= 'none'
+  for (let i = 0; i<document.querySelectorAll('ul li').length; i++){
+    if (document.querySelectorAll('ul li')[i].style.textDecoration ='line-through'){
+      document.querySelectorAll('ul li')[i].style.textDecoration='none'
     }
     }
 }
