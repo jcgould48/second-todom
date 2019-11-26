@@ -22,32 +22,6 @@ function printTodo(todo) {
 // Add an event listener to the ADD button to run a function that we'll write shortly that adds todos.
 
 
-// Add an event listener to the REMOVE button to run a function that we'll write shortly that removes todos.
-const removeButton = document.querySelector('.remove-todo');
-removeButton.onclick = removeFromList;
-
-
-
-
-// Write a function that erases everything from the list.
-function clearList() {
-  // Grab the todo list ul and put it in a variable
-  const list = document.querySelector('.todo-list');
-
-  // Remove all children of that list.
-  // My favorite way uses `.hasChildNodes()` and `.remove()` and `.firstChild`, but there are other ways if you wanna research them instead!
-  while (list.hasChildNodes()) {
-    list.firstChild.remove();
-  }
-}
-
-// NOW. You can go back up two functions to where we left off in our remove-one-item-from-the-list function, run your erase-everything-from-the-list function, and then call your function that prints everything individually.
-// That print function should be calling your print-one-item function, and if that's adding it to the list, you've got it!
-// The way I named functions, this means now adding only two lines back up there:
-// clearList();
-// printList();
-
-
 
 // A function that prints everything on our todo list, INDIVIDUALLY.
 // Make SURE to use the above function!
