@@ -17,7 +17,7 @@ for (let i = 0; i < firstUlLi.length; i++) {
 }
 function olFunc(element){
     element.target.style.textDecoration = 'line-through';
+    document.querySelectorAll('.todo-list').classList.add("strike");
 }
-
 }
 
