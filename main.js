@@ -3,6 +3,10 @@
 // This is mostly for testing purposes.
 const  todos = [];
 
+
+
+
+
 // Rewrite your print todo function to put the todo on the dom instead of in the console.
 function printTodo(todo) {
   // Use `document.createElement` to make an li

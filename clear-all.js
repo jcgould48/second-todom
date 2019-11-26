@@ -33,5 +33,5 @@ function clearList() {
 const removeButton = document.querySelector('.remove-todo');
 removeButton.onclick = removeFromList;
 
-document.querySelector('.remove-todo').addEventListener('click', clearList)
+document.querySelector('.clear-all').addEventListener('click', clearList)
 
