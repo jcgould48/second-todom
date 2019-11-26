@@ -14,12 +14,11 @@ function addToList() {
 const firstUlLi = document.querySelectorAll('ul li')
 for (let i = 0; i < firstUlLi.length; i++) {
     firstUlLi[i].addEventListener('click', olFunc);
-}
-olFunc();
-olClass();
+  }
+      function olFunc(element){
+          element.target.style.textDecoration = 'line-through';
+      }
+
 }
 
 
-function olFunc(element){
-    element.target.style.textDecoration = 'line-through';
-}
