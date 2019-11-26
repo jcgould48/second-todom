@@ -1,7 +1,7 @@
 // Make your global array here.
 // Put a few todos in there to start with!
 // This is mostly for testing purposes.
-const todos = [];
+const  todos = ['groceries'];
 
 // Rewrite your print todo function to put the todo on the dom instead of in the console.
 function printTodo(todo) {
