@@ -1,6 +1,4 @@
 
-
-
 // Now write the function that the event listener will run. It will take what's in the user input and remove it from the todo list array.
 function removeFromList() {
     // Place in a variable the node element for the remove todo input box.
@@ -35,4 +33,5 @@ function clearList() {
 const removeButton = document.querySelector('.remove-todo');
 removeButton.onclick = removeFromList;
 
-document.querySelector('')
+document.querySelector('.remove-todo').addEventListener('click', clearList)
+
