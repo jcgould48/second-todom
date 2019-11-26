@@ -20,27 +20,6 @@ function printTodo(todo) {
 
 
 // Add an event listener to the ADD button to run a function that we'll write shortly that adds todos.
-const addButton = document.querySelector('.add-todo');
-addButton.onclick = addToList;
-
-// Now write the function that the event listener will run. It will take what's in the user input and add it to the todo list array.
-function addToList() {
-  // Place in a variable the node element for the add todo input box.
-  const inputBox = document.querySelector('.todo-input');
-
-  // Place in a variable the text that the user typed into that input box. You can "dot off" the variable above to find a property that's on that element. If you're not sure if you have it, try console logging what you've got!
-  const userInput = inputBox.value;
-
-  // Now put that todo string in your todo list. You have a function for that!
-  addTodo(userInput);
-
-  // Now use that print function to add the todo to the dom!
-  printTodo(userInput);
-
-  // Optionally but helpfully, set that input box's value back to an empty string to empty the box so you can type a different todo in there.
-  inputBox.value = '';
-
-}
 
 
 // Add an event listener to the REMOVE button to run a function that we'll write shortly that removes todos.
@@ -48,21 +27,7 @@ const removeButton = document.querySelector('.remove-todo');
 removeButton.onclick = removeFromList;
 
 
-// Now write the function that the event listener will run. It will take what's in the user input and remove it from the todo list array.
-function removeFromList() {
-  // Place in a variable the node element for the remove todo input box.
-  const inputBox = document.querySelector('.index-input');
 
-  // Place in a variable the text that the user typed into that input box.
-  const userInput = inputBox.value;
-
-  // Remove the todo at that index from the array. We have a function for that!
-  removeTodo(userInput);
-  
-  // Here's where we'll add some code in a minute, but... not yet!
-  clearList();
-  printList();
-}
 
 // Write a function that erases everything from the list.
 function clearList() {
