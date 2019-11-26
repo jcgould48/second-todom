@@ -15,9 +15,11 @@ const firstUlLi = document.querySelectorAll('ul li')
 for (let i = 0; i < firstUlLi.length; i++) {
     firstUlLi[i].addEventListener('click', olFunc);
 }
-function olFunc(element){
-    element.target.style.textDecoration = 'line-through';
-    document.querySelectorAll('.todo-list').classList.add("strike");
-}
+olFunc();
+olClass();
 }
 
+
+function olFunc(element){
+    element.target.style.textDecoration = 'line-through';
+}

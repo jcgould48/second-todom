@@ -19,5 +19,15 @@ function clearList() {
 const removeButton = document.querySelector('.remove-todo');
 removeButton.onclick = removeFromList;
 
+const clearCompleted = function (){
+    if (document.querySelectorAll('ul li').style.textDecoration = 'line-through'){
+        clearList();
+    }
+    }
+
+
+
 document.querySelector('.clear-all').addEventListener('click', clearList)
+document.querySelector('.remove-all-todo').addEventListener('click', clearCompleted)
+
 
