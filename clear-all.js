@@ -34,3 +34,5 @@ function clearList() {
 // Add an event listener to the REMOVE button to run a function that we'll write shortly that removes todos.
 const removeButton = document.querySelector('.remove-todo');
 removeButton.onclick = removeFromList;
+
+document.querySelector('')
