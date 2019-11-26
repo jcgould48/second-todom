@@ -1,8 +1,19 @@
 // Make your global array here.
 // Put a few todos in there to start with!
 // This is mostly for testing purposes.
-const  todos = [];
+const  todos = {
+  name : 'gym',
+  date: new Date(), 
+  completed: false, 
+}
 
+// const todo = {
+//   name: inputBox.value,
+//   date: new Date(),
+//   complete: false
+// }
+
+document.querySelector('.todo-list').innerText= todos.name
 
 
 
